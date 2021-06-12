@@ -12,30 +12,38 @@ struct ContentView: View {
     @State private var targetValue = Int.random(in: 0...100)
     @State private var currentValue = 10
     @State private var alertIsPresented = false
-    
+    private var alpha: Double {
+        Double(computeScore()) / 100
+    }
     
     var body: some View {
         VStack {
-            Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
-                .padding()
+            HStack {
+                Text("Подвиньте слайдер, как можно ближе к: ")
+                    .bold()
+                Text("\(targetValue)")
+                    .foregroundColor(.blue)
+                    .italic()
+                    .bold()
+                    .frame(width: 40, alignment: .leading)
+            }
+            .padding()
             
             SliderRepresentable(value: $currentValue,
-                                alpha: Float(computeScore()))
-                .padding(.horizontal)
+                                alpha: alpha)                .padding(.horizontal)
             
             Button("Проверь меня!") {
-                self.alertIsPresented.toggle()
+                alertIsPresented.toggle()
             }
             .alert(isPresented: $alertIsPresented) {
                 Alert(title: Text("Your score"),
                       message: Text("\(computeScore())"),
                       dismissButton: .cancel(Text("OK")))
             }
+            .padding()
             
-            Button("Начать заново!") {
-                currentValue = 10
-                targetValue = Int.random(in: 0...100)
-            }
+            ResetButton(currentValue: $currentValue,
+                        targetValue: $targetValue)
         }
     }
     
@@ -48,5 +56,17 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+// MARK: - Reset Button
+struct ResetButton: View {
+    @Binding var currentValue: Int
+    @Binding var targetValue: Int
+    var body: some View {
+        Button("Начать заново!") {
+            currentValue = 10
+            targetValue = Int.random(in: 0...100)
+        }
     }
 }

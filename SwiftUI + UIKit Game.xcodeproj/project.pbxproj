@@ -58,13 +58,9 @@
 		EE1434BF26747DBB007E70EE /* SwiftUI + UIKit Game */ = {
 			isa = PBXGroup;
 			children = (
-				EE1434C026747DBB007E70EE /* AppDelegate.swift */,
-				EE1434C226747DBB007E70EE /* SceneDelegate.swift */,
-				EE1434C426747DBB007E70EE /* ContentView.swift */,
-				EE800969267486F300D9E630 /* SliderRepresentable.swift */,
-				EE1434C626747DBC007E70EE /* Assets.xcassets */,
-				EE1434CB26747DBC007E70EE /* LaunchScreen.storyboard */,
-				EE1434CE26747DBC007E70EE /* Info.plist */,
+				EEAB693D26753BC5009D48DA /* Supports */,
+				EEAB693F267541B2009D48DA /* Views */,
+				EEAB693E26753BED009D48DA /* Resources */,
 				EE1434C826747DBC007E70EE /* Preview Content */,
 			);
 			path = "SwiftUI + UIKit Game";
@@ -76,6 +72,34 @@
 				EE1434C926747DBC007E70EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEAB693D26753BC5009D48DA /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EE1434C026747DBB007E70EE /* AppDelegate.swift */,
+				EE1434C226747DBB007E70EE /* SceneDelegate.swift */,
+				EE1434CE26747DBC007E70EE /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		EEAB693E26753BED009D48DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE1434C626747DBC007E70EE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEAB693F267541B2009D48DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE1434C426747DBB007E70EE /* ContentView.swift */,
+				EE800969267486F300D9E630 /* SliderRepresentable.swift */,
+				EE1434CB26747DBC007E70EE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI + UIKit Game/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI + UIKit Game/Info.plist";
+				INFOPLIST_FILE = "SwiftUI + UIKit Game/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI + UIKit Game/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI + UIKit Game/Info.plist";
+				INFOPLIST_FILE = "SwiftUI + UIKit Game/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
