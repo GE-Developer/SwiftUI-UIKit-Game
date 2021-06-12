@@ -13,6 +13,7 @@
 		EE1434C726747DBC007E70EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1434C626747DBC007E70EE /* Assets.xcassets */; };
 		EE1434CA26747DBC007E70EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1434C926747DBC007E70EE /* Preview Assets.xcassets */; };
 		EE1434CD26747DBC007E70EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1434CB26747DBC007E70EE /* LaunchScreen.storyboard */; };
+		EE80096A267486F300D9E630 /* SliderRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE800969267486F300D9E630 /* SliderRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EE1434C926747DBC007E70EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE1434CC26747DBC007E70EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1434CE26747DBC007E70EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE800969267486F300D9E630 /* SliderRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EE1434C026747DBB007E70EE /* AppDelegate.swift */,
 				EE1434C226747DBB007E70EE /* SceneDelegate.swift */,
 				EE1434C426747DBB007E70EE /* ContentView.swift */,
+				EE800969267486F300D9E630 /* SliderRepresentable.swift */,
 				EE1434C626747DBC007E70EE /* Assets.xcassets */,
 				EE1434CB26747DBC007E70EE /* LaunchScreen.storyboard */,
 				EE1434CE26747DBC007E70EE /* Info.plist */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1434C126747DBB007E70EE /* AppDelegate.swift in Sources */,
+				EE80096A267486F300D9E630 /* SliderRepresentable.swift in Sources */,
 				EE1434C326747DBB007E70EE /* SceneDelegate.swift in Sources */,
 				EE1434C526747DBB007E70EE /* ContentView.swift in Sources */,
 			);
@@ -297,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.SwiftUI---UIKit-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.SwiftUI---UIKit-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
